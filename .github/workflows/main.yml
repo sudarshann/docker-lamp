@@ -15,7 +15,7 @@ jobs:
         uses: docker/build-push-action@v1
         with:
           username: ${{ github.actor }}
-          password: ${{ secrets.GITHUB_TOKEN }}
+          password: ${{ github.token }}
           registry: docker.pkg.github.com
           repository: sudarshann/docker-lamp/apache-php-mysql_client
           tag_with_ref: true
